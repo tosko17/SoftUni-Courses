@@ -1,9 +1,4 @@
-function solve(n1){
+function BitcoinMining(input){
 
-    for(i=n1;1<=n1;n1++){
-
-        console.log(n1)
-    }
 }
-
-solve(3)
+solve([100,200,300])
