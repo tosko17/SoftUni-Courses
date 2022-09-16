@@ -1,9 +1,9 @@
 function solve(input){
 
-    let username = input[0]
+    let username = input.shift();
     let passRev= username.split("").reverse().join("");
    
-
+    let correct = true;
     let command;
     let count = 0;
     while ((command = input.shift()) !== passRev) {
@@ -11,12 +11,18 @@ function solve(input){
         if(count<4){
         console.log('Incorrect password. Try again.')
     }else{
+        correct=false;
         break;
     }
 
 }
-console.log(`User ${username} logged in.`)
+if(correct===true){
+    console.log(`User ${username} logged in.`)
+
+}else{
+    console.log(`User ${username} blocked!`);
+}
 
 }
 
-solve(['Acer','login','go','let me in','recA'])
+solve(['sunny','rainy','cloudy','sunny','not sunny'])
