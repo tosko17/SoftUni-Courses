@@ -27,13 +27,13 @@ function BitcoinMining(input) {
 
             while (totalLV >= bitcoinPrice) {
                 bitcoinCounter++;
-                totalLV -= bitcoinPrice
+                totalLV -= bitcoinPrice;
             }
 
         }
-        
+
     }
-    
+
     console.log(`Bought bitcoins: ${bitcoinCounter}`);
     if (dayOf1stBitcoin > 0) {
         console.log(`Day of the first purchased bitcoin: ${dayOf1stBitcoin}`);
